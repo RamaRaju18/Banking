@@ -7,20 +7,15 @@ def account_no():
     else:
         print("Enter Valid Account Number")
         return account_no()
-
 def show_balance():
-    print(f"Your Balance Is: Rs {balance:.2f}")
-    
+    print(f"Your Balance Is: Rs {balance:.2f}")   
 def deposit():
     amount = float(input("Enter Your Amount:"))
-
     if amount < 0:
         print("Enter Valid Amount:")
         return 0
-
     else:
         return amount
-    
 def withdraw():
     amount = float(input("Enter Your Amount:"))
     if amount > balance:
@@ -40,9 +35,7 @@ while Banking:
         print("2.Deposit")
         print("3.Withdraw")
         print("4.Exit")
-
         Choice = int(input("Enter Your Number:"))
-
         if Choice == 1:
             balance = show_balance()
         elif Choice == 2:
@@ -53,7 +46,4 @@ while Banking:
             Banking = False
         else:
             print("Enter valid Number")
-
-
-
 print("Thank You For Banking With Us")
