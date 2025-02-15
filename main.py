@@ -1,6 +1,6 @@
 def account_no():
     acc = ("******")
-    user = (int(input("Enter Account Number:")))
+    user = (int(input("Enter Your 6 Digit Account Number:")))
     Acc = str(user)
     if len(Acc) == len(acc):
         return user
