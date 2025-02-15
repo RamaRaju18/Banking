@@ -1,6 +1,6 @@
 def account_no():
     acc = ("******")
-    user = (int(input("Enter  Your 6 Digit Account Number:")))
+    user = (int(input("Enter Account Number:")))
     Acc = str(user)
     if len(Acc) == len(acc):
         return user
@@ -12,7 +12,6 @@ def show_balance():
     return balance
 def deposit():
     amount = float(input("Enter Your Amount:"))
-
     if amount < 0:
         print("Enter Valid Amount:")
         return 0
