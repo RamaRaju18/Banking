@@ -8,13 +8,15 @@ def account_no():
         print("Enter Valid Account Number")
         return account_no()
 def show_balance():
-    print(f"Your Balance Is: Rs {balance:.2f}")   
+    print(f"Your Balance Is: Rs {balance:.2f}")
+    return balance
 def deposit():
     amount = float(input("Enter Your Amount:"))
     if amount < 0:
         print("Enter Valid Amount:")
         return 0
     else:
+        print("Your Deposit Is Successfull")
         return amount
 def withdraw():
     amount = float(input("Enter Your Amount:"))
@@ -25,6 +27,7 @@ def withdraw():
         print("Enter Valid Amount")
         return 0
     else:
+        print("Your Withdrawl Is Successfull")
         return amount
 balance = 0
 Banking = True
